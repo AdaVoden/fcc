@@ -16,7 +16,7 @@ function isPalindrome(string) {
 
 function addResult(string, truthiness) {
   resultText.innerText = "";
-  // Extra space in not for potential failure of thing
+  // Extra space in 'not' for potential failure of thing
   const notOrBlank = truthiness ? "" : "not ";
   resultText.innerHTML = `<p><strong>${string}</strong> is ${notOrBlank}a palindrome</p>`;
   resultText.classList.remove("hide");
