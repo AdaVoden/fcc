@@ -1,0 +1,95 @@
+html {
+  /* Colours */
+  --primary: #0d1b2a; /* Rich Black */
+  --secondary: #778da9; /* Silver Lake Blue */
+  --tertiary: #415a77; /* YlnMn Blue */
+  --accent: #e0e1dd; /* Platinum */
+  --shadow: #090c02; /* Rich Black */
+
+  /* base 16 for rem; */
+  font-size: 16px;
+  margin: 0;
+  font-family: "Alegreya", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  background-color: var(--primary);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+#checker {
+  background-color: var(--secondary);
+  width: min(100vw, 500px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 9rem;
+  box-shadow: 0rem 0.2rem 0.5rem var(--shadow);
+}
+
+#info {
+  background-color: var(--tertiary);
+  width: min(100vw, 500px);
+  margin: 1.5rem;
+}
+
+#checker,
+#info {
+  border-radius: 0.8rem;
+}
+
+input,
+button {
+  appearance: none;
+}
+
+#text-input {
+  width: 16rem;
+  border: none;
+  background-color: var(--secondary);
+  border-bottom: solid 0.15rem var(--accent);
+  color: black;
+  font-size: 1.2rem;
+}
+
+#check-btn {
+  width: 5rem;
+  height: 2rem;
+  margin-left: 0.25rem;
+  background-color: var(--accent);
+  border-radius: 0.5rem;
+  border: none;
+  color: black;
+  font-size: 1.1rem;
+}
+
+#text-input,
+#check-btn {
+  height: 2rem;
+}
+
+#info {
+  text-align: center;
+}
+
+h1 {
+  font-size: 2rem;
+  color: #ffffff;
+}
+
+p {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  color: white;
+  font-size: 1.1rem;
+}
